@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<style>
+.button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+}
+.body {
+  color: green;
+}
+</style>
+<script>
+function add()
+{
+  var numOne, numTwo, sum;
+  numOne = parseInt(document.getElementById("first").value);
+  numTwo = parseInt(document.getElementById("second").value);
+  sum = numOne + numTwo;
+  document.getElementById("answer").value = sum;
+}
+function sub()
+{
+  var numOne, numTwo, sum;
+  numOne = parseInt(document.getElementById("first").value);
+  numTwo = parseInt(document.getElementById("second").value);
+  sum = numOne - numTwo;
+  document.getElementById("answer").value = sum;
+}
+function mul()
+{
+  var numOne, numTwo, sum;
+  numOne = parseInt(document.getElementById("first").value);
+  numTwo = parseInt(document.getElementById("second").value);
+  sum = numOne * numTwo;
+  document.getElementById("answer").value = sum;
+}
+function div()
+{
+  var numOne, numTwo, sum;
+  numOne = parseInt(document.getElementById("first").value);
+  numTwo = parseInt(document.getElementById("second").value);
+  sum = numOne / numTwo;
+  document.getElementById("answer").value = sum;
+}
+</script>
+</head>
+<body>
+
+<p class="body">Enter the First Number: <input id="first"></p>
+<p class="body">Enter the Second Number: <input id="second"></p>
+<button onclick="add()" class="button">Add</button>
+<button onclick="sub()" class="button">Subtract</button>
+<button onclick="mul()" class="button">Multiply</button>
+<button onclick="div()" class="button">Divide</button>
+<p>Result <input id="answer"></p>
+
+</body>
+</html>

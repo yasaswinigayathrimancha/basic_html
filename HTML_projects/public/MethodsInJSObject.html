@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel="stylesheet"  href="MethodsInJSObject.css"></head>
+<body>
+
+<div class="emp" text-alignment="center">
+<script>  
+
+function emp(id,name,salary){  
+this.id=id;             //it is constructor
+this.name=name;  
+this.salary=salary;  
+this.changeId=changeId;
+this.changeName=changeName;
+this.changeSalary=changeSalary;  
+function changeSalary(otherSalary){  
+this.salary=otherSalary;  
+}  
+function changeName(otherName){  
+this.name=otherName;  
+}  
+function changeId(otherId){  
+this.id=otherId;  
+}  
+
+}  
+e=new emp(103,"Sonoo Jaiswal",30000);  
+document.write(e.id+" "+e.name+" "+e.salary);  
+e.changeSalary(45000);                                //using functions and one object emp;
+e.changeName("ooha");
+e.changeId(104)
+document.write("<br>"+e.id+" "+e.name+" "+e.salary);  
+document.write("<br>");
+
+var emp1=["Sonoo","Vimal","Ratan"];                     //using array with another object emp1;
+emp1[3]="yash";
+for (i=0;i<emp.length;i++){  
+	document.write(emp1[i] + " ");  
+	}  
+</script>  
+</div>
+</body>
+</html>
+
+ 

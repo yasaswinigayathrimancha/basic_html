@@ -1,0 +1,31 @@
+#header {
+    height: 100px;
+    background-color: violet;
+    text-align:center;
+}
+
+#main {
+    height: 400px;
+}
+
+#leftBody {
+    width:40%;
+    height:110%;
+    background-color: pink;
+    text-align:center;
+    float:left;
+}
+
+#rightBody {
+    width:60%;
+    height:110%;
+    text-align:center;
+    background-color: lightblue;
+    float: right;
+}
+
+#footer {
+    height: 100px;
+    background-color: lightgreen;
+    text-align:center;
+}
